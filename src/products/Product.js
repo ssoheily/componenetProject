@@ -1,7 +1,7 @@
 import "./Product.css";
 export function Product({ title:productTitle, image, price, count,children }) {
   // console.log(props);
-    let title= "product card"
+    let title= "Menu card"
   return (
     count && (
       <div>

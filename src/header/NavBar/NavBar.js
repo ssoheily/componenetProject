@@ -2,11 +2,11 @@ import "./NavBar.css";
 export default function NavBar() {
   return (
     <header>
-      <h1>MynavbarSite</h1>
+      <h1>Pedro&Restaurant</h1>
       <nav>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
           <a href="#">Services</a>
+          <a href="#">Contact</a>
+          <a href="#">About</a>
       </nav>
     </header>
   );

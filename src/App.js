@@ -2,6 +2,7 @@
 import React from "react"
 import "./App.css"
 import { Product } from "./products/Product"
+import Header from "./header/Header"
  
 /*1. creste component   */
 export default function App() {
@@ -11,11 +12,15 @@ export default function App() {
     {id:3 , title:"Hamburger" ,image:"images/gallery_3.jpeg", price:15 ,count:31},
   ]
   return ( 
-    <div className="container">
-    <Product {...allProduct[0]}> <p>smartphoene description is ready to sale 2022,.... </p></Product>
-    <Product {...allProduct[1]}> <p>smartphoene description is ready to sale 2022,.... </p></Product>
-    <Product {...allProduct[2]}> <p>smartphoene description is ready to sale 2022,.... </p></Product>
+    <div>
+      <Header></Header>
+      <div className="container">
+          <Product {...allProduct[0]}> <p>smartphoene description is ready to sale 2022,.... </p></Product>
+          <Product {...allProduct[1]}> <p>smartphoene description is ready to sale 2022,.... </p></Product>
+          <Product {...allProduct[2]}> <p>smartphoene description is ready to sale 2022,.... </p></Product>
+      </div>
     </div>
+ 
     
   )
 }

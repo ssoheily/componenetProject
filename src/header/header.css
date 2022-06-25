@@ -1,23 +1,26 @@
-*{
-
-    
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background: #eee;
+body {
+    background: rgb(242, 167, 167);
+    /* background: #eee; */
     margin: 0;
 }
-section{
-height: 100vh;
-background-color: coral;
+
+section {
+    height: 1vh;
+    background-color: coral;
 }
- section  span{
+
+section span {
     margin: 0;
     text-align: center;
     line-height: 1;
     display: block;
     font-weight: 700;
-    padding-top: calc(50vh - 20pt);
-    font-size: 300%;
- }
+    /* padding-top: calc(50vh - 20pt); */
+    font-size: 100%;
+}
