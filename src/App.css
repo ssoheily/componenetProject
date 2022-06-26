@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* @font-face {
+    font-family: "name";
+    src: url("");
+} */
+body {
+    font-size: 18px;
+    /* color:white; */
+    /* font-family: "name"; */
+}

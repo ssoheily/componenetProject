@@ -1,0 +1,300 @@
+
+#scroll {
+    height: 10px;
+    background-color: rgb(61, 60, 60, 0.6);
+    position: fixed;
+}
+
+.headerElem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px;
+
+}
+
+/*     <!-- ***** Start Clock ***** --> */
+.clock {
+    width: 150px;
+    height: 50px;
+    padding: 10px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 0 0;
+    /* background-color: rgb(18, 17, 18); */
+}
+
+.clock div {
+    position: relative;
+    background-color: #000;
+    height: 100%;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    letter-spacing: 3px;
+
+}
+
+.clock span {
+    font-weight: bolder;
+    font-size: 20px;
+    color: #FFF;
+}
+
+/*     <!-- ***** end Clock ***** --> */
+
+/*     <!-- ***** start  Logo Runlos   ***** --> */
+/* <!-- deactive resolotion part (Replace with logo <Runlos> ) --> */
+
+.containerLogo {
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoRunlos {
+    width: 255px;
+    height: 60px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logoRunlos img{
+    width: 200px;
+    height: 80px;    
+}
+/*     <!-- ***** end  Logo Runlos   ***** --> */
+
+/*     <!-- ***** start   RESOLOTION  ***** --> */
+
+/* <!-- deactive resolotion part (Replace with logo <Runlos> ) --> */
+/* .resoltion {
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brightness-box {
+    width: 300px;
+    height: 40px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+/* .brightness-box i {
+    margin: 0 5px;
+}
+
+.brightness-box input {
+    cursor: move;
+}
+
+#range {
+    width: 100%;
+    
+    height: 3px;
+    -webkit-appearance: none;
+    background: #0a85ff;
+    outline: none;
+} */
+
+/*     <!-- ***** end   RESOLOTION  ***** --> */
+
+/*     <!-- ***** start switch ***** --> */
+.switch {
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(39, 38, 38);
+    position: relative;
+    padding: 10px 0 0 10px;
+}
+
+.flicker {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    transition: 0.3s;
+    box-shadow: inset 4px 4px 4px rgb(255, 255, 255),
+        inset -4px -4px 4px rgb(195 193 198 / 90%);
+}
+
+.dark {
+    /* background-color: rgb(57, 57, 57); */
+    background-color: rgb(3, 22, 84, 0.5);
+    transition: 0.3s;
+}
+
+.moon {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 0 rgb(255, 255, 255);
+    position: absolute;
+    top: 5px;
+    left: 45px;
+}
+
+/* chnage position flicker in switch  */
+.dark .flicker {
+    transform: translateX(40px);
+}
+
+/*     <!-- ***** end switch ***** --> */
+
+/*     <!-- ***** SideBar  Start ***** --> */
+
+.sidebar {
+    width: 0;
+    /* height: 100vh; */
+    background-color: #222;
+    position: fixed;
+    top: 250px;
+    left: 0;
+    z-index: 2;
+    /* transition: width 0.5s; */
+    transition: all 0.5s;
+    opacity: 0.6;
+
+}
+
+.sidebar h2 {
+    text-align: center;
+    color: #999;
+    width: 100%;
+}
+
+.btnSidebar {
+    padding: 35px;
+    font-size: 40px;
+    font-weight: 300px;
+    margin: 20px;
+    border: 0;
+    /* delete round background */
+    background-color: transparent;
+    cursor: pointer;
+    position: fixed;
+    z-index: 3;
+    outline: none;
+}
+
+.ctrlbtn {
+    width: 20px;
+    margin-top: 15px;
+    color: #250029;
+}
+
+.close:after {
+    content: "\002716 ";
+}
+
+.open:after {
+    content: "\002630 ";
+}
+
+.show {
+    /* width: 200px; */
+    display: none;
+}
+
+/* icons in sidebar */
+.icon-bar {
+    width: 90px;
+    /* Set a specific width */
+    background-color: #555;
+    /* Dark-grey background */
+}
+
+.icon-bar a {
+    display: block;
+    /* Make the links appear below each other instead of side-by-side */
+    text-align: center;
+    /* Center-align text */
+    padding: 16px;
+    /* Add some padding */
+    transition: all 0.3s ease;
+    /* Add transition for hover effects */
+    color: white;
+    /* White text color */
+    font-size: 36px;
+    /* Increased font-size */
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+    /* Add a hover color */
+}
+
+
+/*     <!-- ***** SideBar  End ***** --> */
+
+
+/*     <!-- ***** start header ***** --> */
+.header {
+    /* height: 420px; */
+    max-height: 100%;
+    background-color: gray;
+    font-size: 45px;
+    text-align: center;
+    display: flex;
+    background: url(http://runlos.com/images/section-header.png) no-repeat center;
+    background-size: cover;
+    color: #fff;
+}
+
+#clip-path {
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+}
+
+.point {
+    font-size: larger;
+    color: red;
+    padding: 4px;
+
+}
+
+.menu-list {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.menu-list li a{
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+.menu-list li a:hover {
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(251, 81, 81);
+    /* background-color: #000; */
+
+}
+
+.header i {
+    font-size: 50px;
+}
+
+/*     <!-- ***** end   header ***** --> */
