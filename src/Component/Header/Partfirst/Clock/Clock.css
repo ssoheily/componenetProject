@@ -1,0 +1,38 @@
+
+/*     <!-- ***** Start Clock ***** --> */
+.clock {
+    width: 150px;
+    height: 50px;
+    padding: 10px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 0 0;
+    /* background-color: rgb(18, 17, 18); */
+}
+
+.clock div {
+    position: relative;
+    background-color: #000;
+    height: 100%;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    letter-spacing: 3px;
+
+}
+
+.clock span {
+    font-weight: bolder;
+    font-size: 20px;
+    color: #FFF;
+}
+
+/*     <!-- ***** end Clock ***** --> */
+
